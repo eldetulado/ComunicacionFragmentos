@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity(),
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+        nav_view.setCheckedItem(R.id.nav_camera)
 
         if (savedInstanceState == null) {
             cargarFragment(RegisterFragment())
